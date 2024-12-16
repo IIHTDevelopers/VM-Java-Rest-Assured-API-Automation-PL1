@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="18" passed="0" failed="17" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-12-16T18:06:01 IST" name="Suite" finished-at="2024-12-16T18:07:07 IST" duration-ms="65708">
+    <groups>
+      <group name="PL1">
+        <method signature="RestAssured_TestCases_PL1.createAppointmentTest()[pri:1, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" name="createAppointmentTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.getAllApplicableDoctorsTest()[pri:2, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" name="getAllApplicableDoctorsTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.cancelAppointmentTest()[pri:3, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" name="cancelAppointmentTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.clashAppointmentTest()[pri:4, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" name="clashAppointmentTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.searchPatientTest()[pri:5, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" name="searchPatientTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.bookingListTest()[pri:6, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" name="bookingListTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.AllStockDetailsTest()[pri:7, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" name="AllStockDetailsTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.MainStoreTest()[pri:8, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" name="MainStoreTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.PharmacyStoreTest()[pri:9, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" name="PharmacyStoreTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.PatientConsumptionTest()[pri:10, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" name="PatientConsumptionTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.DeactivatePharmCountTest()[pri:12, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" name="DeactivatePharmCountTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.AppointApplicDeptTest()[pri:13, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" name="AppointApplicDeptTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.addcurrencyTest()[pri:15, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" name="addcurrencyTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.findMatchingPatientTest()[pri:16, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" name="findMatchingPatientTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.getAllRegisteredPatientsTest()[pri:17, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" name="getAllRegisteredPatientsTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.getAllBillingCounters()[pri:18, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" name="getAllBillingCounters" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.ActivatePharmCountTest()[pri:11, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" name="ActivatePharmCountTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.AdmittedPatientsData()[pri:14, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" name="AdmittedPatientsData" class="testcases.RestAssured_TestCases_PL1"/>
+      </group> <!-- PL1 -->
+    </groups>
+    <test started-at="2024-12-16T18:06:01 IST" name="Test" finished-at="2024-12-16T18:07:07 IST" duration-ms="65708">
+      <class name="testcases.RestAssured_TestCases_PL1">
+        <test-method signature="createAppointmentTest()[pri:1, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" started-at="2024-12-16T18:06:01 IST" name="createAppointmentTest" description="Precondition: Create an appointment via the API
+1. Send POST request to create a new appointment with provided data
+2. Verify the response status code is 200 OK
+3. Validate the response contains &#039;Status&#039; as &#039;OK&#039;
+4. Retrieve and validate the Appointment ID from the response" finished-at="2024-12-16T18:06:06 IST" duration-ms="5335" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[createAppointmentWithAuth must be implemented using Rest Assured methods only. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: createAppointmentWithAuth must be implemented using Rest Assured methods only. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at testcases.RestAssured_TestCases_PL1.createAppointmentTest(RestAssured_TestCases_PL1.java:68)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAppointmentTest -->
+        <test-method signature="getAllApplicableDoctorsTest()[pri:2, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" started-at="2024-12-16T18:06:13 IST" name="getAllApplicableDoctorsTest" description="Precondition: Multiple applicable doctors must exist
+1. Validate that the response contains list of Doctors
+2. Verify the response status code is 200.
+3. Verify Performer IDs are unique" finished-at="2024-12-16T18:06:13 IST" duration-ms="23" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "io.restassured.response.Response.jsonPath()" because the return value of "rest.CustomResponse.getResponse()" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.restassured.response.Response.jsonPath()" because the return value of "rest.CustomResponse.getResponse()" is null
+at testcases.TestCodeValidator.validateResponseFields(TestCodeValidator.java:143)
+at testcases.RestAssured_TestCases_PL1.getAllApplicableDoctorsTest(RestAssured_TestCases_PL1.java:103)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllApplicableDoctorsTest -->
+        <test-method signature="clashAppointmentTest()[pri:4, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" started-at="2024-12-16T18:06:16 IST" name="clashAppointmentTest" description="Precondition: Patients and Doctor must be created successfully.
+1. Validate clashing appointments.
+2. Verify response status code and results." finished-at="2024-12-16T18:06:16 IST" duration-ms="216" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[clashAppointmentWithAuth must be implemented using Rest Assured methods only. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: clashAppointmentWithAuth must be implemented using Rest Assured methods only. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at testcases.RestAssured_TestCases_PL1.clashAppointmentTest(RestAssured_TestCases_PL1.java:189)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clashAppointmentTest -->
+        <test-method signature="searchPatientTest()[pri:5, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" started-at="2024-12-16T18:06:19 IST" name="searchPatientTest" description="Precondition: Patients must exist in the system.
+1. Search for patients by query string.
+2. Validate response status code and matching results." finished-at="2024-12-16T18:06:19 IST" duration-ms="9" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[searchPatientWithAuth must be implemented using Rest Assured methods only. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: searchPatientWithAuth must be implemented using Rest Assured methods only. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at testcases.RestAssured_TestCases_PL1.searchPatientTest(RestAssured_TestCases_PL1.java:220)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchPatientTest -->
+        <test-method signature="bookingListTest()[pri:6, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" started-at="2024-12-16T18:06:22 IST" name="bookingListTest" description="Precondition: Appointments must be created within the specified date range.
+1. Retrieve appointments for a performer within a date range.
+2. Validate response status code and appointment dates." finished-at="2024-12-16T18:06:23 IST" duration-ms="400" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[bookingListWithAuthInRange must be implemented using Rest Assured methods only. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: bookingListWithAuthInRange must be implemented using Rest Assured methods only. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at testcases.RestAssured_TestCases_PL1.bookingListTest(RestAssured_TestCases_PL1.java:269)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookingListTest -->
+        <test-method signature="AllStockDetailsTest()[pri:7, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" started-at="2024-12-16T18:06:26 IST" name="AllStockDetailsTest" description="Retrieve and validate the complete list of stock details." finished-at="2024-12-16T18:06:26 IST" duration-ms="34" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[AllStockDetailsWithAuth must be implemented using Rest Assured methods only. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: AllStockDetailsWithAuth must be implemented using Rest Assured methods only. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at testcases.RestAssured_TestCases_PL1.AllStockDetailsTest(RestAssured_TestCases_PL1.java:305)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AllStockDetailsTest -->
+        <test-method signature="MainStoreTest()[pri:8, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" started-at="2024-12-16T18:06:29 IST" name="MainStoreTest" description="Retrieve and validate the main store details from the pharmacy settings." finished-at="2024-12-16T18:06:29 IST" duration-ms="11" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[MainStoreDetailsWithAuth must be implemented using Rest Assured methods only. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: MainStoreDetailsWithAuth must be implemented using Rest Assured methods only. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at testcases.RestAssured_TestCases_PL1.MainStoreTest(RestAssured_TestCases_PL1.java:339)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MainStoreTest -->
+        <test-method signature="PharmacyStoreTest()[pri:9, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" started-at="2024-12-16T18:06:32 IST" name="PharmacyStoreTest" description="Retrieve and validate the list of pharmacy stores." finished-at="2024-12-16T18:06:32 IST" duration-ms="3" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[PharmacyStoresWithAuth must be implemented using Rest Assured methods only. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: PharmacyStoresWithAuth must be implemented using Rest Assured methods only. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at testcases.RestAssured_TestCases_PL1.PharmacyStoreTest(RestAssured_TestCases_PL1.java:370)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PharmacyStoreTest -->
+        <test-method signature="PatientConsumptionTest()[pri:10, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" started-at="2024-12-16T18:06:35 IST" name="PatientConsumptionTest" description="Retrieve and validate patient consumption details." finished-at="2024-12-16T18:06:35 IST" duration-ms="8" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[PatientConsumption must be implemented using Rest Assured methods only. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: PatientConsumption must be implemented using Rest Assured methods only. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at testcases.RestAssured_TestCases_PL1.PatientConsumptionTest(RestAssured_TestCases_PL1.java:403)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PatientConsumptionTest -->
+        <test-method signature="ActivatePharmCountTest()[pri:11, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" started-at="2024-12-16T18:06:38 IST" name="ActivatePharmCountTest" description="Activate a pharmacy counter and validate the response." finished-at="2024-12-16T18:06:38 IST" duration-ms="106" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[ActivatePharmCount must be implemented using Rest Assured methods only. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: ActivatePharmCount must be implemented using Rest Assured methods only. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at testcases.RestAssured_TestCases_PL1.ActivatePharmCountTest(RestAssured_TestCases_PL1.java:439)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ActivatePharmCountTest -->
+        <test-method signature="DeactivatePharmCountTest()[pri:12, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" started-at="2024-12-16T18:06:42 IST" name="DeactivatePharmCountTest" description="Deactivate a pharmacy counter and validate the response." finished-at="2024-12-16T18:06:42 IST" duration-ms="4" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[DeactivatePharmCount must be implemented using Rest Assured methods only. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: DeactivatePharmCount must be implemented using Rest Assured methods only. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at testcases.RestAssured_TestCases_PL1.DeactivatePharmCountTest(RestAssured_TestCases_PL1.java:468)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeactivatePharmCountTest -->
+        <test-method signature="AppointApplicDeptTest()[pri:13, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" started-at="2024-12-16T18:06:45 IST" name="AppointApplicDeptTest" description="Retrieve and validate the list of appointment applicable departments." finished-at="2024-12-16T18:06:45 IST" duration-ms="4" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[AppointApplicDept must be implemented using Rest Assured methods only. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: AppointApplicDept must be implemented using Rest Assured methods only. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at testcases.RestAssured_TestCases_PL1.AppointApplicDeptTest(RestAssured_TestCases_PL1.java:498)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AppointApplicDeptTest -->
+        <test-method signature="AdmittedPatientsData()[pri:14, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" started-at="2024-12-16T18:06:48 IST" name="AdmittedPatientsData" description="Retrieve and validate the list of currently admitted patients." finished-at="2024-12-16T18:06:48 IST" duration-ms="7" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[admittedPatientData must be implemented using Rest Assured methods only. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: admittedPatientData must be implemented using Rest Assured methods only. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at testcases.RestAssured_TestCases_PL1.AdmittedPatientsData(RestAssured_TestCases_PL1.java:531)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AdmittedPatientsData -->
+        <test-method signature="addcurrencyTest()[pri:15, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" started-at="2024-12-16T18:06:51 IST" name="addcurrencyTest" description="Add a new currency and validate the response." finished-at="2024-12-16T18:06:51 IST" duration-ms="8" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[addCurrencyWithAuth must be implemented using Rest Assured methods only. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: addCurrencyWithAuth must be implemented using Rest Assured methods only. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at testcases.RestAssured_TestCases_PL1.addcurrencyTest(RestAssured_TestCases_PL1.java:578)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addcurrencyTest -->
+        <test-method signature="findMatchingPatientTest()[pri:16, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" started-at="2024-12-16T18:06:54 IST" name="findMatchingPatientTest" description="Find a patient with matching phone number and validate the response." finished-at="2024-12-16T18:06:54 IST" duration-ms="98" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[findMatchingPatientWithAuth must be implemented using Rest Assured methods only. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: findMatchingPatientWithAuth must be implemented using Rest Assured methods only. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at testcases.RestAssured_TestCases_PL1.findMatchingPatientTest(RestAssured_TestCases_PL1.java:631)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findMatchingPatientTest -->
+        <test-method signature="getAllRegisteredPatientsTest()[pri:17, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" started-at="2024-12-16T18:06:57 IST" name="getAllRegisteredPatientsTest" description="Retrieve all registered patients and validate unique Patient IDs." finished-at="2024-12-16T18:06:57 IST" duration-ms="6" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[getRegisteredPatientsWithAuth must be implemented using Rest Assured methods only. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: getRegisteredPatientsWithAuth must be implemented using Rest Assured methods only. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at testcases.RestAssured_TestCases_PL1.getAllRegisteredPatientsTest(RestAssured_TestCases_PL1.java:668)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllRegisteredPatientsTest -->
+        <test-method signature="getAllBillingCounters()[pri:18, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" started-at="2024-12-16T18:07:01 IST" name="getAllBillingCounters" description="Retrieve all billing counters and validate unique Counter IDs." finished-at="2024-12-16T18:07:01 IST" duration-ms="32" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[getBillingCountersWithAuth must be implemented using Rest Assured methods only. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: getBillingCountersWithAuth must be implemented using Rest Assured methods only. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at testcases.RestAssured_TestCases_PL1.getAllBillingCounters(RestAssured_TestCases_PL1.java:707)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllBillingCounters -->
+        <test-method signature="cancelAppointmentTest()[pri:3, instance:testcases.RestAssured_TestCases_PL1@65fe9e33]" started-at="2024-12-16T18:07:04 IST" name="cancelAppointmentTest" description="Precondition: An appointment must be created successfully.
+1. Validate that the appointment ID is not null.
+2. Send a PUT request to cancel the appointment using the appointment ID.
+3. Verify the response status code is 200.
+4. Validate the response indicates successful cancellation." finished-at="2024-12-16T18:07:04 IST" depends-on-methods="testcases.RestAssured_TestCases_PL1.createAppointmentTest" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method testcases.RestAssured_TestCases_PL1.cancelAppointmentTest() on instance testcases.RestAssured_TestCases_PL1@65fe9e33 depends on not successfully finished methods 
+[testcases.RestAssured_TestCases_PL1.createAppointmentTest() on instance testcases.RestAssured_TestCases_PL1@65fe9e33]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method testcases.RestAssured_TestCases_PL1.cancelAppointmentTest() on instance testcases.RestAssured_TestCases_PL1@65fe9e33 depends on not successfully finished methods 
+[testcases.RestAssured_TestCases_PL1.createAppointmentTest() on instance testcases.RestAssured_TestCases_PL1@65fe9e33]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cancelAppointmentTest -->
+      </class> <!-- testcases.RestAssured_TestCases_PL1 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
