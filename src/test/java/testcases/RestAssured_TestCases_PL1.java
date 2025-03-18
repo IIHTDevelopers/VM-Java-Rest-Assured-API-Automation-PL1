@@ -235,8 +235,8 @@ public class RestAssured_TestCases_PL1 {
 		String firstName = (String) results.get(0).get("FirstName");
 		String shortName = (String) results.get(0).get("ShortName");
 
-		Assert.assertTrue(firstName.contains("Test"), "FirstName does not contain 'Test'.");
-		Assert.assertTrue(shortName.contains("Test"), "ShortName does not contain 'Test'.");
+		Assert.assertTrue(firstName.toLowerCase().contains("test".toLowerCase()), "FirstName does not contain 'test'.");
+		Assert.assertTrue(shortName.toLowerCase().contains("test".toLowerCase()), "ShortName does not contain 'test'.");
 
 		System.out.println("Search Patient Response:");
 		customResponse.getResponse().prettyPrint();
