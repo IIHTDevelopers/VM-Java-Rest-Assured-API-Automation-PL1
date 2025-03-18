@@ -27,7 +27,7 @@ public class ApiUtil {
 	}
 
 	/**
-	 * @Test2 This method cancels an existing appointment with authorization.
+	 * @Test2 This method gets all applicable doctors with authorization.
 	 * 
 	 * @param endpoint - The API endpoint to which the GET request is sent.
 	 * @param body     - Optional
