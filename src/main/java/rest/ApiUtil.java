@@ -13,7 +13,7 @@ public class ApiUtil {
 	 * @Test1 This method creates a new appointment with authorization.
 	 * 
 	 * @param endpoint - The API endpoint to which the POST request is sent.
-	 * @param body     - Optional
+	 * @param body     - Optional request body
 	 * @return CustomResponse - Contains response, statusCode, status and appointmentId.
 	 */
 	public CustomResponse createAppointmentWithAuth(String endpoint, Object body) {
@@ -30,7 +30,7 @@ public class ApiUtil {
 	 * @Test2 This method gets all applicable doctors with authorization.
 	 * 
 	 * @param endpoint - The API endpoint to which the GET request is sent.
-	 * @param body     - Optional
+	 * @param body     - Optional request body
 	 * @return CustomResponse - Contains response, statusCode, status and results.
 	 */
 	public CustomResponse getAllApplicableDoctorsWithAuth(String endpoint, Object body) {
@@ -47,7 +47,7 @@ public class ApiUtil {
 	 * @Test3 This method cancels an existing appointment with authorization.
 	 * 
 	 * @param endpoint - The API endpoint to which the PUT request is sent.
-	 * @param body     - Optional
+	 * @param body     - Optional request body
 	 * @return CustomResponse - Contains response, statusCode, status and resultMessage.
 	 */
 	public CustomResponse cancelAppointmentWithAuth(String endpoint, Object body) {
@@ -64,7 +64,7 @@ public class ApiUtil {
 	 * @Test4 This method finds if there is any clashing appointment.
 	 *
 	 * @param endpoint - The API endpoint to which the GET request is sent.
-	 * @param body     - Optional
+	 * @param body     - Optional request body
 	 * @return CustomResponse - Contains response, statusCode, status and resultMessage.
 	 */
 	public CustomResponse clashAppointmentWithAuth(String endpoint, Object body) {
@@ -81,7 +81,7 @@ public class ApiUtil {
 	 * @Test5 This method searches for a patient using specified query parameters.
 	 *
 	 * @param endpoint - The API endpoint to which the GET request is sent.
-	 * @param body     - Optional
+	 * @param body     - Optional request body
 	 * @return CustomResponse - Contains response, statusCode, status and results.
 	 */
 	public CustomResponse searchPatientWithAuth(String endpoint, Object body) {
@@ -99,7 +99,7 @@ public class ApiUtil {
 	 *        within a given date range.
 	 *
 	 * @param endpoint - The API endpoint to which the GET request is sent.
-	 * @param body     - Optional
+	 * @param body     - Optional request body
 	 * @return CustomResponse - Contains response, statusCode, status and results.
 	 */
 	public CustomResponse bookingListWithAuthInRange(String endpoint, Object body) {
@@ -117,7 +117,7 @@ public class ApiUtil {
 	 *        pharmacy.
 	 *
 	 * @param endpoint - The API endpoint to which the GET request is sent.
-	 * @param body     - Optional
+	 * @param body     - Optional request body
 	 * @return CustomResponse - Contains response, statusCode, status and results.
 	 */
 	public CustomResponse AllStockDetailsWithAuth(String endpoint, Object body) {
@@ -135,7 +135,7 @@ public class ApiUtil {
 	 *        settings.
 	 *
 	 * @param endpoint - The API endpoint to which the GET request is sent.
-	 * @param body     - Optional
+	 * @param body     - Optional request body
 	 * @return CustomResponse - Contains response, statusCode, status and results.
 	 */
 	public CustomResponse MainStoreDetailsWithAuth(String endpoint, Object body) {
@@ -153,7 +153,7 @@ public class ApiUtil {
 	 *        details of each store.
 	 *
 	 * @param endpoint - The API endpoint to which the GET request is sent.
-	 * @param body     - Optional
+	 * @param body     - Optional request body
 	 * @return CustomResponse - Contains response, statusCode, status and results.
 	 */
 	public CustomResponse PharmacyStoresWithAuth(String endpoint, Object body) {
@@ -170,7 +170,7 @@ public class ApiUtil {
 	 * @Test10 This method retrieves and verifies patient consumption details.
 	 *
 	 * @param endpoint - The API endpoint to which the GET request is sent.
-	 * @param body     - Optional
+	 * @param body     - Optional request body
 	 * @return CustomResponse - Contains response, statusCode, status and results.
 	 */
 	public CustomResponse PatientConsumption(String endpoint, Object body) {
@@ -187,7 +187,7 @@ public class ApiUtil {
 	 * @Test11 This method activates a pharmacy counter using counter details.
 	 *
 	 * @param endpoint - The API endpoint to which the PUT request is sent.
-	 * @param body     - Optional
+	 * @param body     - Optional request body
 	 * @return CustomResponse - Contains response, statusCode, status and results.
 	 */
 	public CustomResponse ActivatePharmCount(String endpoint, Object body) {
@@ -204,7 +204,7 @@ public class ApiUtil {
 	 * @Test12 This method deactivates a pharmacy counter.
 	 *
 	 * @param endpoint - The API endpoint to which the PUT request is sent.
-	 * @param body     - Optional
+	 * @param body     - Optional request body
 	 * @return CustomResponse - Contains response, statusCode, status and results.
 	 */
 	public CustomResponse DeactivatePharmCount(String endpoint, Object body) {
@@ -222,7 +222,7 @@ public class ApiUtil {
 	 *         departments.
 	 *
 	 * @param endpoint - The API endpoint to which the GET request is sent.
-	 * @param body     - Optional
+	 * @param body     - Optional request body
 	 * @return CustomResponse - Contains response, statusCode, status and results.
 	 */
 	public CustomResponse AppointApplicDept(String endpoint, Object body) {
@@ -240,7 +240,7 @@ public class ApiUtil {
 	 *         patients.
 	 *
 	 * @param endpoint - The API endpoint to which the GET request is sent.
-	 * @param body     - Optional
+	 * @param body     - Optional request body
 	 * @return CustomResponse - Contains response, statusCode, status and results.
 	 */
 	public CustomResponse admittedPatientData(String endpoint, Object body) {
@@ -257,7 +257,7 @@ public class ApiUtil {
 	 * @Test15 This method adds a new currency using the provided data.
 	 *
 	 * @param endpoint - The API endpoint to which the POST request is sent.
-	 * @param body     - Optional
+	 * @param body     - Optional request body
 	 * @return CustomResponse - Contains response, statusCode, status and results.
 	 */
 	public CustomResponse addCurrencyWithAuth(String endpoint, Object body) {
@@ -275,7 +275,7 @@ public class ApiUtil {
 	 *         already exists.
 	 *
 	 * @param endpoint - The API endpoint to which the GET request is sent.
-	 * @param body     - Optional
+	 * @param body     - Optional request body
 	 * @return CustomResponse - Contains response, statusCode, status and results.
 	 */
 	public CustomResponse findMatchingPatientWithAuth(String endpoint, Object body) {
@@ -293,7 +293,7 @@ public class ApiUtil {
 	 *         IDs are unique.
 	 *
 	 * @param endpoint - The API endpoint to which the GET request is sent.
-	 * @param body     - Optional
+	 * @param body     - Optional request body
 	 * @return CustomResponse - Contains response, statusCode, status and results.
 	 */
 	public CustomResponse getRegisteredPatientsWithAuth(String endpoint, Object body) {
@@ -310,7 +310,7 @@ public class ApiUtil {
 	 * @Test18 This method retrieves and verifies the list of Billing Counters.
 	 *
 	 * @param endpoint - The API endpoint to which the GET request is sent.
-	 * @param body     - Optional
+	 * @param body     - Optional request body
 	 * @return CustomResponse - Contains response, statusCode, status and results.
 	 */
 	public CustomResponse getBillingCountersWithAuth(String endpoint, Object body) {
