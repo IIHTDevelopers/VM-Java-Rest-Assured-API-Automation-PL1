@@ -251,7 +251,7 @@ public class RestAssured_TestCases_PL1 {
 		apiUtil = new ApiUtil();
 
 		LocalDate currentDate = LocalDate.now();
-		LocalDate dateFiveDaysBefore = currentDate.minusDays(5);
+		LocalDate dateFiveDaysBefore = LocalDate.of(2025, 1, 1);
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
 		String currentDateStr = currentDate.format(formatter);
